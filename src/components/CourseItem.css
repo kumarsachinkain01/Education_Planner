@@ -1,0 +1,68 @@
+.course-item {
+  border: 5px solid #505240;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #e7ebee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* Add this line */
+  overflow: hidden;
+}
+
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 20px rgba(186, 221, 58, 0.2);
+}
+
+.course-item h2 {
+  font-size: 2em;
+  margin: 0px 0px 6px 0px; 
+  color: #333;
+  transition: color 0.3s;
+}
+
+.course-item p {
+  margin: 4px 0;
+  color: #3d3c3c;
+  transition: color 0.3s;
+}
+
+.course-item h2:hover{
+  color: #4CAF50;
+}
+.course-item p:hover {
+  color: #0b4b94;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.course-item {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.delete-course-button {
+  position: absolute; /* Add this line */
+  top: 10px; /* Adjust the value to your liking */
+  right: 10px; /* Adjust the value to your liking */
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-course-button:hover {
+  background-color: #ff1a1a;
+}

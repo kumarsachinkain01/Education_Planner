@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #140c0c;
+}
+
+header {
+  background-color: #1e5594;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+form {
+  margin: 2em auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b6310;
+}
